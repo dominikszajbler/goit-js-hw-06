@@ -18,8 +18,8 @@ const gallery = document.querySelector("ul.gallery");
 // Użyj tablicy obiektów images w celu utworzenia elementów <img> umieszczonych w <li>.
 const imagesList = images
   .map((image) => (
-    `<li>
-      <img height="200" width="300" class = "image" src="${image.url}" alt="${image.alt}" />
+    `<li class = task3__list>
+      <img class = "task3__image" src="${image.url}" alt="${image.alt}" />
     </li>`
   ))
   .join("");

@@ -23,7 +23,12 @@ button {
   cursor: pointer;
 }
 
-/* .img {
+.task3__image {
   height: 200px;
   width: 300px;
-} */
+}
+.task3__list {
+  padding: 15px;
+  list-style-type: none;
+  display: inline;
+}
