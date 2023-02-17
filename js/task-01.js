@@ -1,18 +1,28 @@
-const NumberCategories = document.querySelectorAll("#categories > li");
+// console.log(document.body)
+// console.log(document.body.childNodes)
+// console.log(document.body.children)
+// console.log(document.querySelector('ul#categories').children.length)
 
-console.log(`Number of categories: ${NumberCategories.length} `);
-// Policzy i wprowadzi do wiersza poleceń liczbę kategorii w ul#categories, czyli elementy li.item.
+// const cat = document.querySelector('ul#categories')
 
-// Dla każdego elementu li.item na liście ul#categories, 
-const CategoryAnalysis = NumberCategories.forEach((e) => {
-   console.log(
-    `Category: ${e.querySelector("h2").textContent}\nElements: ${
-      e.querySelector("ul").childElementCount
-    } `
-    // znajdzie i wprowadzi do wiersza poleceń tekst nagłówka elementu (tag <h2>)
-    //  i liczbę elementów w kategorii (wszystkich <li>).
-  );
+console.log(`Number of categories: ${document.querySelectorAll(".item").length}`)
+
+const itemArray = [...document.querySelectorAll(".item")]
+itemArray.forEach( (item) => {
+    console.log(`Category: ${item.firstElementChild.textContent}`);
+    console.log(`Elements: ${item.querySelectorAll('li').length}`);
 });
 
 
 
+// const animalCat = itemArray[0];
+// const productCat = itemArray[1];
+// const technologyCat = itemArray[2];
+
+
+
+// console.log(`Category: ${animalCat.firstElementChild.textContent}`);
+// console.log(`Elements: ${animalCat.querySelectorAll('li').length}`);
+
+// console.log([...itemArray])
+// console.log(document.querySelectorAll(".item").childNodes)
