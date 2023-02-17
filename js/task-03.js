@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+console.log(document);
+
+// const imagesUl = document.querySelector('ul#ingredients');
+const imagesUl = document.querySelector('ul');
+console.log(imagesUl);
+
+images.forEach(img => {
+  const liItem = document.createElement('li');
+  liItem.textContent = img.alt;
+  // liItem.className = "item";
+  imagesUl.append(liItem)
+  }
+)
