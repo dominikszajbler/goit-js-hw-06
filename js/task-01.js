@@ -4,10 +4,11 @@
 // console.log(document.querySelector('ul#categories').children.length)
 
 // const cat = document.querySelector('ul#categories')
+const itemArray = document.querySelectorAll(".item")
+console.log(`Number of categories: ${itemArray.length}`)
 
-console.log(`Number of categories: ${document.querySelectorAll(".item").length}`)
+// const itemArray = [...document.querySelectorAll(".item")]
 
-const itemArray = [...document.querySelectorAll(".item")]
 itemArray.forEach( (item) => {
     console.log(`Category: ${item.firstElementChild.textContent}`);
     console.log(`Elements: ${item.querySelectorAll('li').length}`);
